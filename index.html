@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Report Tool</title>
+</head>
+<body>
+  <!-- <section class="about">
+    <p>An experimental tool for reporting missing equipment from operating resource fields. Our groups goal is to help secure and organise resource fields, provide services for replacing and reporting missing equipment, base building and scrooping operations</p>
+  </section> -->
+  <form onsubmit="sendReport(event)">
+    <label for="name">In Game Name: </label>
+    <input type="text" id="name" placeholder="[TAG] Name, (Leave empty to stay anonymous)">
+
+    <select onchange="getcodes(this.value)" name="hexs" id="hexs">
+      <option value="">Select Hex</option>
+      <option value="Acrithia">Acrithia</option>
+      <option value="Ash Fields">Ash Fields</option>
+      <option value="Red River">Red River</option>
+      <option value="Westgate">Westgate</option>
+    </select>
+
+    <select name="codes" id="codes" disabled>
+      <option value="">Select code</option>
+    </select>
+
+      <select name="harvester" id="harvester">
+        <option value="">Harvesters</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      <select name="fueltruck" id="fueltruck">
+        <option value="">Fuel Trucks</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+
+    <label for="message">Notes:</label>
+    <textarea type="text" id="message" rows="3" placeholder="Any additional information; partisan activity, building recommendations, wildlife sightings etc "></textarea>
+
+    <button type="submit" id="btn-form">Submit</button>
+    <p>*Information submited is sent to our discord server.</p>
+  </form>
+<script src="script.js"></script>
+</body>
+</html>

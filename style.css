@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Pitch;
+  src: url(Pitch-Regular.woff2);
+}
+
+body {
+  background-color: white;
+  font-family: "Pitch";
+  margin: 80px auto 80px auto;
+  width: 1120px;
+  font-size: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  display: block;
+  width: 100%
+} 
+
+section {
+  margin: 80px 0 80px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+section.about p {
+  grid-column: 2 / span 10;
+  text-align: center;
+}
+
+/* || Form Styling */
+form {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  border: 1px solid black;
+  column-gap: 30px;
+  padding: 80px 0px 80px 0px; 
+  align-items: center;
+  background-color: white;
+}
+
+input, select, textarea {
+  font-size: 20px;
+  font-family: "Pitch";
+}
+label {
+  font-size: 24px;
+}
+label[for="name"] {
+  grid-column: 3 / span 3;
+  grid-row: 1 /2;
+}
+
+input[type=text] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px dashed black;
+  grid-column:  5 / 11;
+  grid-row: 1;
+  background-color: white;
+}
+input[type=text]:focus {
+  outline: none;
+}
+
+select#hexs {
+  grid-column: 3 / span 4;
+  grid-row: 2;
+}
+select#codes {
+  grid-column: 7 / span 4;
+  grid-row: 2;
+}
+select#harvester {
+  grid-column: 3 / span 4;
+  grid-row: 3;
+}
+select#fueltruck {
+  grid-column: 7 / span 4;
+  grid-row: 3;
+}
+label[for="message"] {
+  grid-column: 3 / span 4;
+  grid-row: 4;
+}
+textarea[type=text] {
+  resize: none;
+  grid-column: 3 / span 8;
+  grid-row: 5;
+}
+button#btn-form {
+  grid-column: 3 / span 4;
+  grid-row: 6;
+}
+form p {
+  color: grey;
+  grid-column: 3 / 11;
+  grid-row: 7;
+}
+select {
+  border: 1px solid black;
+  background-color: white;
+  padding: 20px;
+}
+
+button {
+  border: 1px solid black;
+  background-color: #fcc765;
+  margin: 20px 0px 0px 0px;
+  padding: 20px 120px 20px 120px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Pitch;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ffb42a;
+}
