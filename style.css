@@ -119,6 +119,30 @@ button {
   transition-duration: 0.4s;
 }
 
+button.discord {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2f2d45;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button img {
+  width: 40px;
+  height: 40px;
+  padding: 0 16px 0 0;
+}
+
+button.discord:hover {
+  cursor: pointer;
+  background-color: #1b1831;
+}
+
 button:hover {
   cursor: pointer;
   background-color: #ffb42a;
