@@ -48,7 +48,7 @@ sendReport = async (event) => {
     ],
   };
   
-  const webhookUrl = "https://discord.com/api/webhooks/968857242034130974/q9rLSkS8DrXUViMIXc3Z9KWPwPjUbKqJTnp7u-XtVs3K76apnkyjdy1_XfCIVwzsGN0M"; // replace with config file
+  const webhookUrl = "https://discord.com/api/webhooks/968857242034130974/q9rLSkS8DrXUViMIXc3Z9KWPwPjUbKqJTnp7u-XtVs3K76apnkyjdy1_XfCIVwzsGN0M";
 
   const response = await fetch(webhookUrl, {
     method: "POST",

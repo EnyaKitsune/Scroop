@@ -20,17 +20,6 @@ input {
   width: 100%
 } 
 
-section {
-  margin: 80px 0 80px 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-section.about p {
-  grid-column: 2 / span 10;
-  text-align: center;
-}
-
 /* || Form Styling */
 form {
   display: grid;
@@ -47,9 +36,11 @@ input, select, textarea {
   font-size: 20px;
   font-family: "Pitch";
 }
+
 label {
   font-size: 24px;
 }
+
 label[for="name"] {
   grid-column: 3 / span 3;
   grid-row: 1 /2;
@@ -64,6 +55,7 @@ input[type=text] {
   grid-row: 1;
   background-color: white;
 }
+
 input[type=text]:focus {
   outline: none;
 }
@@ -72,36 +64,44 @@ select#hexs {
   grid-column: 3 / span 4;
   grid-row: 2;
 }
+
 select#codes {
   grid-column: 7 / span 4;
   grid-row: 2;
 }
+
 select#harvester {
   grid-column: 3 / span 4;
   grid-row: 3;
 }
+
 select#fueltruck {
   grid-column: 7 / span 4;
   grid-row: 3;
 }
+
 label[for="message"] {
   grid-column: 3 / span 4;
   grid-row: 4;
 }
+
 textarea[type=text] {
   resize: none;
   grid-column: 3 / span 8;
   grid-row: 5;
 }
+
 button#btn-form {
   grid-column: 3 / span 4;
   grid-row: 6;
 }
+
 form p {
   color: grey;
   grid-column: 3 / 11;
   grid-row: 7;
 }
+
 select {
   border: 1px solid black;
   background-color: white;
